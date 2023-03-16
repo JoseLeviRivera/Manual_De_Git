@@ -48,6 +48,10 @@ Para guardar e incluir todo los archivo del repositorio
 ```
 git add .
 ```
+Fechero especial para excluir archivos, extension, ruta
+```
+.gitignore
+```
 Guardar los cambios del archivo en el sistema del control de versiones
 ```
 git commit -m "[Mensaje del commit]"
@@ -105,3 +109,40 @@ Combinar el historial de commits con otra rama diferente a la actual
 ```
 git merge
 ```
+Almacena cambios temporales, los recupera, lista y elimina
+```
+git stash [pop|list| drop]
+```
+Especifica el directorio remoto donde se aloja el proyecto de git 
+```
+git remote
+```
+Para descargar un repositorio
+```
+git clone
+```
+Descargar el historial sin incorporar los cambios 
+```
+git fetch
+```
+Descargar el historial incorporando los cambios 
+```
+git pull
+```
+Sube los cambios a la rama
+```
+git push
+```
+Permite añadir commits concretos de otras ramas a tu rama
+```
+git cherry-pick
+```
+integra modificaciones de una rama en otra y actualiza el historial
+```
+git rebase
+```
+Muestra los datos del commit especifico
+```
+git show[commit]
+```
+Cambia el nombre del archivo y lo prepara para su guardado
