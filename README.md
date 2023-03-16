@@ -1,6 +1,9 @@
 # Manual_De_Git
 Este es un pequeño manual de los comandos más usado en el sistema de control de versiones de git
 
+## ¿Qué es un repositorio en git?
+Un repositorio de Git es un almacenamiento virtual de tu proyecto. Te permite guardar versiones del código a las que puedes acceder cuando lo necesites.
+
 ## ¿Dónde se puede descargar git?
 para descargar git, se debe de ingresar a la pagina principal [Git](https://git-scm.com/) Una vez dentro se debe de buscar en el apartado en de descarga
 
@@ -27,4 +30,25 @@ git config --global user.email "[Mi email]"
 Para ver la configuracion 
 ```
 git config --list
+```
+## Iniciando el proyecto
+Para iniciar un repositorio en el directorio actual
+```
+git init
+```
+Si se buscar ver el estado del repostorio
+```
+git status
+```
+Guardar el estado del archivo
+```
+git add "[nombre del archivo]"
+```
+Para guardar e incluir todo los archivo del repositorio
+```
+git git add .
+```
+Guardar los cambios del archivo en el sistema del control de versiones
+```
+git commit -m "[Mensaje del commot]"
 ```
