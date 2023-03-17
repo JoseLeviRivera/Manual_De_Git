@@ -90,8 +90,8 @@ git tag
 ```
 ## Trabajando con Ramas 
 Tip como buenas practicas 
-1. ![Trabajo en equipo]()
-1. ![A la hora de trabajar con ramas]()
+1. ![Trabajo en equipo](https://github.com/JoseLeviRivera/Manual_De_Git/blob/main/trabajo%20en%20equipo.jpeg)
+1. ![A la hora de trabajar con ramas](https://raw.githubusercontent.com/JoseLeviRivera/Manual_De_Git/main/ramas.webp)
 ### Comandos para trabajar con ramas
 Para crear una rama 
 ```
