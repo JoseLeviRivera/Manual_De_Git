@@ -1,5 +1,6 @@
 # Manual de Git y Github
-Este es un pequeño manual de los comandos más usado en el sistema de control de versiones de git
+Este es un pequeño manual de los comandos más usado en el sistema de control de versiones git
+1. ![Qr](https://github.com/JoseLeviRivera/Manual_De_Git/blob/main/qrcode-generado.png)
 
 ## ¿Qué es un repositorio en git?
 Un repositorio de Git es un almacenamiento virtual de tu proyecto. Te permite guardar versiones del código a las que puedes acceder cuando lo necesites.
