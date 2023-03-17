@@ -57,11 +57,11 @@ Para guardar e incluir todo los archivo del repositorio
 ```
 git add .
 ```
-Fechero especial para excluir archivos, extension, ruta
+Fichero especial para excluir archivos, extension, ruta
 ```
 .gitignore
 ```
-Guardar los cambios del archivo en el sistema del control de versiones. [Buenas practicas](https://codigofacilito.com/articulos/buenas-practicas-en-commits-de-git)
+Guardar los cambios del archivo en el sistema del control de versiones. Tip: [Buenas practicas](https://codigofacilito.com/articulos/buenas-practicas-en-commits-de-git)
 ```
 git commit -m "[Mensaje del commit]"
 ```
@@ -97,21 +97,29 @@ Si se quiere combinar dos comandos y ponerle un alias se puede de la siguiente m
 ```
 git config --global alias.ac '!git add . && git commit -m'
 ```
+Alias para ver el log y las ramas en forma de arbol
+```
+git config --global alias.tree "log --graph --decorate --all --oneline"
+```
 Muestra las diferencias entre achivos
 ```
 git diff
-```
-Situar el archivo en el area de espera manteniendo su contenido
-```
-git reset
 ```
 Muestra toda las referencia asociadas al commits del proyecto 
 ```
 git reflog
 ```
-Asocia una etiqueta a un commit
+Asocia una etiqueta a un commit, lista los tags. Tip: [Buenas practicas](https://desarrolloweb.com/articulos/especificar-versiones-git-tag.html)
 ```
 git tag
+```
+Para agregar un tag 
+```
+git tag <nombre del tag>
+```
+Moverse entre tags 
+```
+git checkout tags/<etiqueta del tag>
 ```
 ## Trabajando con Ramas 
 Tip como buenas practicas 
@@ -133,6 +141,15 @@ git switch
 Combinar el historial de commits con otra rama diferente a la actual
 ```
 git merge
+```
+Para recuperar un commit eliminado con un reset hard se puede hacer uso de algunos conmandos
+```
+$ git reflog
+$ git checkout -b new-branch <hash>
+$ git add <archivo modificado> <.>
+$ git commit -m "Restore accidentally deleted commit"
+$ git checkout <rama-dev>
+$ git merge new-branch 
 ```
 Almacena cambios temporales, los recupera, lista y elimina
 ```
@@ -170,4 +187,3 @@ Muestra los datos del commit especifico
 ```
 git show[commit]
 ```
-Cambia el nombre del archivo y lo prepara para su guardado
