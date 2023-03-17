@@ -53,7 +53,7 @@ Fechero especial para excluir archivos, extension, ruta
 ```
 .gitignore
 ```
-Guardar los cambios del archivo en el sistema del control de versiones
+Guardar los cambios del archivo en el sistema del control de versiones. [Buenas practicas](https://codigofacilito.com/articulos/buenas-practicas-en-commits-de-git)
 ```
 git commit -m "[Mensaje del commit]"
 ```
