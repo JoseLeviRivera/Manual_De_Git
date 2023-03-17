@@ -41,9 +41,17 @@ Si se buscar ver el estado del repostorio
 ```
 git status
 ```
-Guardar el estado del archivo
+Para regresar al estado actual del area de trabajo
+```
+git checkout "Nombre del archivo"
+```
+Guardar el estado del archivo en el stagging area
 ```
 git add "[nombre del archivo]"
+```
+Retroceder del stagging area y posicionarse en el area de trabajo
+```
+git restore --staged "Nombre del archivo"
 ```
 Para guardar e incluir todo los archivo del repositorio
 ```
@@ -57,9 +65,17 @@ Guardar los cambios del archivo en el sistema del control de versiones. [Buenas 
 ```
 git commit -m "[Mensaje del commit]"
 ```
-Comando para cambiar entre ramas y commit, ademas sirve para regresar del area de trabajo
+Comando para resetear un commit y posicionarlo en el stagging area 
 ```
-git checkout "opcion"
+git reset --soft HEAD
+```
+Comando para resetear un commit y posicionarlo en el area de trabajo
+```
+git reset --hard HEAD
+```
+Comando para cambiar entre ramas y commit, ademas sirve para regresar del area de trabajo y posicionarse en head detached 
+```
+git checkout "Head"
 ```
 Para borrar el archivo y situarlo en el estado de eliminacion
 ```
@@ -72,6 +88,14 @@ git log
 Crear un alias personalizado para poder abreviar otro mas complejo
 ```
 git alias
+```
+Para crear un alias de un comando ya existente de git 
+```
+git config --global alias.st status
+```
+Si se quiere combinar dos comandos y ponerle un alias se puede de la siguiente manera
+```
+git config --global alias.ac '!git add . && git commit -m'
 ```
 Muestra las diferencias entre achivos
 ```
